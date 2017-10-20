@@ -1,0 +1,8 @@
+{
+	"name" : "socialanalytics",
+	"description" : "Social Analytics One",
+	"dependencies": {
+		"admin-lte": "latest"
+	},
+	"private": true
+}
