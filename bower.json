@@ -4,5 +4,8 @@
 	"dependencies": {
 		"admin-lte": "latest"
 	},
-	"private": true
+	"private": true,
+	"resolutions": {
+		"jquery": "~3.2.1"
+	}
 }
