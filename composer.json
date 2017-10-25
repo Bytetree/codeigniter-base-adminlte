@@ -26,12 +26,12 @@
 	},
 	"scripts": {
         "post-update-cmd": [
-            "npm install --production",
+            "npm install --only=dev",
             "bower install --production",
             "gulp --production"
         ],
         "post-install-cmd": [
-            "npm install --production",
+            "npm install --only=dev",
             "bower install --production",
             "gulp --production"
         ]
