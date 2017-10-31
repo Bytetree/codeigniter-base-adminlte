@@ -1,6 +1,7 @@
 {
-	"name" : "projectname",
-	"description" : "Project Name",
+	"name" : "%%projectname%%",
+	"author": "%%author%%",
+	"description" : "%%projectdescription%%",
 	"dependencies": {
 		"admin-lte": "latest"
 	},

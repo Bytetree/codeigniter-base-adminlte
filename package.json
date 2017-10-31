@@ -1,8 +1,8 @@
 {
-  "name": "projectname",
-  "version": "1.0.0",
-  "description": "Project Name",
-  "main": "gulpfile.js",
+  "name": "%%projectname%%",
+  "author": "%%author%%",
+  "description": "%%projectdescription%%",
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,9 +10,6 @@
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/bytetree/codeigniter-boilerplate.git"
   },
-  "author": "Jon Ziemlich",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/bytetree/codeigniter-boilerplate#readme",
   "devDependencies": {
     "gulp": "latest",
     "laravel-elixir": "latest"
