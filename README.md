@@ -31,3 +31,6 @@ composer update
 
 ### DEMO Content
 - AdminLTE ( https://github.com/almasaeed2010/AdminLTE )
+
+### Idea from
+- CodeIgniter Composer Installer ( https://github.com/kenjis/codeigniter-composer-installer )
