@@ -1,6 +1,6 @@
 {
-	"name" : "socialanalytics",
-	"description" : "Social Analytics One",
+	"name" : "projectname",
+	"description" : "Project Name",
 	"dependencies": {
 		"admin-lte": "latest"
 	},
