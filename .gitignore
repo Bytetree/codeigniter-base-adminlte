@@ -1,8 +1,5 @@
 .DS_Store
 
-composer.lock
-package-lock.json
-
 application/modules/
 
 application/cache/*
