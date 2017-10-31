@@ -9,3 +9,4 @@ sed -i '' "s/\%%projectname%%/$projectname/" composer.json bower.json package.js
 sed -i '' "s/\%%projectdescription%%/$projectdescription/" composer.json bower.json package.json
 sed -i '' "s/\%%author%%/$projectauthor/" composer.json bower.json package.json
 composer update
+rm init.sh
