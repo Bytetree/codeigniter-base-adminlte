@@ -1,12 +1,12 @@
 {
 	"name" : "%%projectname%%",
-	"author": "%%author%%",
-	"description" : "%%projectdescription%%",
+    "author": "%%author%%",
+    "description" : "%%projectdescription%%",
 	"dependencies": {
 		"admin-lte": "latest"
 	},
 	"private": true,
 	"resolutions": {
-		"jquery": "~3.2.1"
+		"jquery": ">=3.3.1"
 	}
 }

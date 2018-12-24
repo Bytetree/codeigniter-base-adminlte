@@ -1,7 +1,7 @@
-{
-	"name" : "%%projectname%%",
+{   
+    "name" : "%%projectname%%",
     "author": "%%author%%",
-	"description" : "%%projectdescription%%",
+    "description" : "%%projectdescription%%",
     "repositories": [ 
         {
             "type": "package",
@@ -29,12 +29,12 @@
         "post-update-cmd": [
             "npm install --only=dev",
             "bower install --production",
-            "gulp --production"
+            "grunt"
         ],
         "post-install-cmd": [
             "npm install --only=dev",
             "bower install --production",
-            "gulp --production"
+            "grunt"
         ]
     },
     "extra": {
