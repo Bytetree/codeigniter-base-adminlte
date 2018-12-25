@@ -23,6 +23,6 @@ sed -i '' "s/\%%dbuser%%/$dbuser/" ./application/config/database.php
 sed -i '' "s/\%%dbpass%%/$dbpass/" ./application/config/database.php
 sed -i '' "s/\%%dbname%%/$dbname/" ./application/config/database.php
 
-composer update
+composer install
 
 rm init.sh
