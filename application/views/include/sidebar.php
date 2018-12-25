@@ -9,8 +9,6 @@
 
 	    <?php if( $this->session->userdata('user_role') == 1 ): ?>
 	      <?php include('sidebar/admin.php'); ?>
-
-	      <?php include('sidebar/example.php'); ?>
 	    <?php endif; ?>
 
 	</ul>
