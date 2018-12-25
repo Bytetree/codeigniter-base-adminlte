@@ -8,5 +8,21 @@ read projectauthor
 sed -i '' "s/\%%projectname%%/$projectname/" composer.json bower.json package.json
 sed -i '' "s/\%%projectdescription%%/$projectdescription/" composer.json bower.json package.json
 sed -i '' "s/\%%author%%/$projectauthor/" composer.json bower.json package.json
+
+echo -n 'Codeigniter Boilerplate - Database - HOST: '
+read dbhost
+echo -n 'Codeigniter Boilerplate - Database - USER: '
+read dbuser
+echo -n 'Codeigniter Boilerplate - Database - PASS: '
+read dbpass
+echo -n 'Codeigniter Boilerplate - Database - NAME: '
+read dbname
+
+sed -i '' "s/\%%dbhost%%/$dbhost/" ./application/config/database.php
+sed -i '' "s/\%%dbuser%%/$dbuser/" ./application/config/database.php
+sed -i '' "s/\%%dbpass%%/$dbpass/" ./application/config/database.php
+sed -i '' "s/\%%dbname%%/$dbname/" ./application/config/database.php
+
 composer update
+
 rm init.sh
