@@ -4,7 +4,7 @@
     <div class="col-md-12">
       <div class="box box-body">
         <div class="col-md-6">
-          <h4><i class="fa fa-list"></i> &nbsp; Users List (Datatable - ServerSide Processing)</h4>
+          <h4><i class="fa fa-list"></i> &nbsp; Users List</h4>
         </div>
         <div class="col-md-6 text-right">
           <a href="<?= base_url('admin/users/add'); ?>" class="btn btn-success"><i class="fa fa-plus"></i> Add New User</a>
@@ -56,13 +56,9 @@
     </div>
 
   </div>
-</div>
+</div> 
 
-
-  <!-- DataTables -->
-  <script src="<?= base_url() ?>public/plugins/datatables/jquery.dataTables.min.js"></script>
-  <script src="<?= base_url() ?>public/plugins/datatables/dataTables.bootstrap.min.js"></script>
-  <script>
+<script>
   //---------------------------------------------------
   var table = $('#na_datatable').DataTable( {
       "processing": true,
@@ -78,12 +74,4 @@
         { "targets": 5, "name": "Action", 'searchable':false, 'orderable':false,'width':'100px'}
       ]
     });
-  </script>
-  
-  <script type="text/javascript">
-      $('#confirm-delete').on('show.bs.modal', function(e) {
-      $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
-    });
-  </script>
-  
-
+</script>

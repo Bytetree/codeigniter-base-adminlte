@@ -7,6 +7,7 @@ module.exports = function( grunt ) {
 				src: [
 					'vendor/bower_components/bootstrap/dist/css/bootstrap.css',
 					'vendor/bower_components/admin-lte/dist/css/AdminLTE.css',
+					'vendor/bower_components/datatables.net-bs/css/dataTables.bootstrap.css',
 					'src/assets/css/style.css',
 				],
 				dest: 'public/assets/css/lib/',
@@ -28,6 +29,8 @@ module.exports = function( grunt ) {
 					'vendor/bower_components/bootstrap/dist/js/bootstrap.js',
 					'vendor/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
 					'vendor/bower_components/admin-lte/dist/js/adminlte.js',
+					'vendor/bower_components/datatables.net/js/jquery.dataTables.js',
+					'vendor/bower_components/datatables.net-bs/js/dataTables.bootstrap.js',
 					'src/assets/js/script.js',
 				],
 				dest: 'public/assets/js/lib/',
@@ -42,6 +45,14 @@ module.exports = function( grunt ) {
 				expand: true,
 				flatten: true
 			},
+			fonts: {
+				src: [
+					'vendor/bower_components/bootstrap/dist/fonts/*',
+				],
+				dest: 'public/assets/fonts/',
+				expand: true,
+				flatten: true
+			},
 		},
 
 		cssmin: {
@@ -49,6 +60,7 @@ module.exports = function( grunt ) {
 				files: {  
 					'public/assets/css/main.min.css': [  
 						'public/assets/css/lib/bootstrap.css',
+						'public/assets/css/lib/dataTables.bootstrap.css',
 						'public/assets/css/lib/AdminLTE.css',
 						'public/assets/css/lib/style.css',
 					]
@@ -57,14 +69,22 @@ module.exports = function( grunt ) {
 		},
 
 		uglify: {
-			js: {
+			topjs: {
 				files: {  
-					'public/assets/js/scripts.min.js': [  
+					'public/assets/js/top-scripts.min.js': [  
 						'public/assets/js/lib/jquery.js',
 						'public/assets/js/lib/jquery-ui.js',
 						'public/assets/js/lib/bootstrap.js',
 						'public/assets/js/lib/bootstrap-datepicker.js',
 						'public/assets/js/lib/adminlte.js',
+						'public/assets/js/lib/jquery.dataTables.js',
+						'public/assets/js/lib/dataTables.bootstrap.js',
+					]
+				}
+			},
+			bottomjs: {
+				files: {  
+					'public/assets/js/bottom-scripts.min.js': [  
 						'public/assets/js/lib/script.js',
 					]
 				}

@@ -101,7 +101,7 @@ class MX_Loader extends CI_Loader
 		{
 			return FALSE;
 		}
-
+		
 		require_once BASEPATH.'database/DB'.EXT;
 
 		if ($return === TRUE) return DB($params, $query_builder);

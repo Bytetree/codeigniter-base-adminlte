@@ -10,11 +10,10 @@
 		  <!-- Ionicons -->
 		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-		  <!-- Datatable style -->
-		  <link rel="stylesheet" href="<?= base_url() ?>public/plugins/datatables/dataTables.bootstrap.css">
-
 		  <link rel="stylesheet" href="<?= base_url() ?>assets/css/main.min.css">	
-		  <link rel="stylesheet" href="<?= base_url() ?>assets/css/skins/skin-blue.min.css">		
+		  <link rel="stylesheet" href="<?= base_url() ?>assets/css/skins/skin-blue.min.css">
+
+		  <script src="<?= base_url() ?>assets/js/top-scripts.min.js"></script>	
 	</head>
 	<body class="hold-transition skin-blue sidebar-mini">
 		<div class="wrapper" style="height: auto;">
@@ -33,6 +32,7 @@
 				</header>
 				<!--header end-->
 				<!--sidebar start-->
+
 				<aside>	
 					<?php include('include/sidebar.php'); ?>
 				</aside>
@@ -56,7 +56,7 @@
 			
 		</div>
 
-	<script src="<?= base_url() ?>assets/js/scripts.min.js"></script>
+	<script src="<?= base_url() ?>assets/js/bottom-scripts.min.js"></script>
 
 	</body>
 </html>

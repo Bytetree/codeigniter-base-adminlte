@@ -1,6 +1,3 @@
- <!-- Datatable style -->
-<link rel="stylesheet" href="<?= base_url() ?>public/plugins/datatables/dataTables.bootstrap.css">  
-
  <section class="content">
   <div class="row">
     <div class="col-md-12">
@@ -56,9 +53,6 @@
   <!-- /.box -->
 </section>  
 
-<!-- DataTables -->
-<script src="<?= base_url() ?>public/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="<?= base_url() ?>public/plugins/datatables/dataTables.bootstrap.min.js"></script>
 <script>
   $(function () {
     $("#example1").DataTable();

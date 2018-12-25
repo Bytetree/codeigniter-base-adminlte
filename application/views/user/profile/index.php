@@ -71,9 +71,3 @@
   </div>  
 
 </section> 
-
-
-
- <script>
-    $("#profile").addClass('active');
-  </script>

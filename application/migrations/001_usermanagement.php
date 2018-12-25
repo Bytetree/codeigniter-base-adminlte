@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Migration_Add_usermanagement extends CI_Migration {
+class Migration_Usermanagement extends CI_Migration {
 
         public function up()
         {
@@ -20,6 +20,15 @@ class Migration_Add_usermanagement extends CI_Migration {
                 ));
                 $this->dbforge->add_key('id', TRUE);
                 $this->dbforge->create_table('ci_user_groups');
+
+                $data = array(
+                    array('id' => '1',
+                    'group_name' => "Administrator"),
+                    array('id' => '2',
+                    'group_name' => "User")
+                );
+                
+                $this->db->insert_batch('ci_user_groups', $data);
 
                 $this->dbforge->add_field(array(
                         'id' => array(
@@ -97,5 +106,17 @@ class Migration_Add_usermanagement extends CI_Migration {
                 ));
                 $this->dbforge->add_key('id', TRUE);
                 $this->dbforge->create_table('ci_users');
+
+                $data = array(
+                        array(
+                                'id' => '1',
+                                'role' => '1',
+                                'is_verify' => '1',
+                                'username' => "user",
+                                'password' => '$2y$10$QRc6EN8mQpR2H6eWpdP5D.UBOQDT9MO0xiZwKJb4R1Y6Zh757Vbba',
+                        )
+                );
+                
+                $this->db->insert_batch('ci_users', $data);
         }
 }
