@@ -3,8 +3,6 @@
 composer.lock
 package-lock.json
 
-application/modules/*
-
 application/cache/*
 !application/cache/index.html
 !application/cache/.htaccess
