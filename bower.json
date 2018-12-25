@@ -1,7 +1,7 @@
 {
-	"name" : "%%projectname%%",
-    "author": "%%author%%",
-    "description" : "%%projectdescription%%",
+	"name" : "bytetree-dataworld",
+    "author": "Jon Ziemlich",
+    "description" : "ByteTree DataWorld",
 	"dependencies": {
 		"admin-lte": "latest"
 	},

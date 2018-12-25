@@ -7,11 +7,30 @@ module.exports = function( grunt ) {
 				src: [
 					'vendor/bower_components/bootstrap/dist/css/bootstrap.css',
 					'vendor/bower_components/admin-lte/dist/css/AdminLTE.css',
+					'src/assets/css/style.css',
 				],
 				dest: 'public/assets/css/lib/',
 				expand: true,
 				flatten: true
-			}
+			},
+			js: {
+				src: [
+					'vendor/bower_components/bootstrap/dist/js/bootstrap.js',
+					'vendor/bower_components/admin-lte/dist/js/adminlte.js',
+					'vendor/bower_components/jquery/dist/jquery.js',
+				],
+				dest: 'public/assets/js/lib/',
+				expand: true,
+				flatten: true
+			},
+			img: {
+				src: [
+					'src/assets/img/login_bg.jpg',
+				],
+				dest: 'public/assets/img/',
+				expand: true,
+				flatten: true
+			},
 		},
 
 		cssmin: {
@@ -20,6 +39,19 @@ module.exports = function( grunt ) {
 					'public/assets/css/main.min.css': [  
 						'public/assets/css/lib/bootstrap.css',
 						'public/assets/css/lib/AdminLTE.css',
+						'public/assets/css/lib/style.css',
+					]
+				}
+			}
+		},
+
+		uglify: {
+			js: {
+				files: {  
+					'public/assets/js/scripts.min.js': [  
+						'public/assets/js/lib/jquery.js',
+						'public/assets/js/lib/bootstrap.js',
+						'public/assets/js/lib/adminlte.js',
 					]
 				}
 			}
@@ -31,5 +63,5 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( "grunt-contrib-copy" );
 	grunt.loadNpmTasks( "grunt-contrib-cssmin" );
 
-	grunt.registerTask( "default", [ "copy", "cssmin" ] );
+	grunt.registerTask( "default", [ "copy", "cssmin", "uglify" ] );
 };
