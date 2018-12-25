@@ -14,13 +14,13 @@ read dbhost
 echo -n 'Codeigniter Boilerplate - Database - USER: '
 read dbuser
 echo -n 'Codeigniter Boilerplate - Database - PASS: '
-read dbpass
+read dbpw
 echo -n 'Codeigniter Boilerplate - Database - NAME: '
 read dbname
 
 sed -i '' "s/\%%dbhost%%/$dbhost/" ./application/config/database.php
 sed -i '' "s/\%%dbuser%%/$dbuser/" ./application/config/database.php
-sed -i '' "s/\%%dbpass%%/$dbpass/" ./application/config/database.php
+sed -i '' "s/\%%dbpw%%/$dbpw/" ./application/config/database.php
 sed -i '' "s/\%%dbname%%/$dbname/" ./application/config/database.php
 
 composer install

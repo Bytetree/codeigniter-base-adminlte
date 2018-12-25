@@ -28,14 +28,14 @@
 	},
 	"scripts": {
         "post-update-cmd": [
-            "npm update --only=dev",
-            "bower update --production",
+            "npm install",
+            "bower install",
             "grunt",
             "php ./public/index.php migrate"
         ],
         "post-install-cmd": [
-            "npm install --only=dev",
-            "bower install --production",
+            "npm install",
+            "bower install",
             "grunt",
             "php ./public/index.php migrate"
         ]
