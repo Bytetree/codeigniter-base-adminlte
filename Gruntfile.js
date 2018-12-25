@@ -13,11 +13,22 @@ module.exports = function( grunt ) {
 				expand: true,
 				flatten: true
 			},
+			adminlteskins: {
+				src: [
+					'vendor/bower_components/admin-lte/dist/css/skins/*.min.css',
+				],
+				dest: 'public/assets/css/skins/',
+				expand: true,
+				flatten: true
+			},
 			js: {
 				src: [
-					'vendor/bower_components/bootstrap/dist/js/bootstrap.js',
-					'vendor/bower_components/admin-lte/dist/js/adminlte.js',
 					'vendor/bower_components/jquery/dist/jquery.js',
+					'vendor/bower_components/jquery-ui/jquery-ui.js',
+					'vendor/bower_components/bootstrap/dist/js/bootstrap.js',
+					'vendor/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
+					'vendor/bower_components/admin-lte/dist/js/adminlte.js',
+					'src/assets/js/script.js',
 				],
 				dest: 'public/assets/js/lib/',
 				expand: true,
@@ -50,8 +61,11 @@ module.exports = function( grunt ) {
 				files: {  
 					'public/assets/js/scripts.min.js': [  
 						'public/assets/js/lib/jquery.js',
+						'public/assets/js/lib/jquery-ui.js',
 						'public/assets/js/lib/bootstrap.js',
+						'public/assets/js/lib/bootstrap-datepicker.js',
 						'public/assets/js/lib/adminlte.js',
+						'public/assets/js/lib/script.js',
 					]
 				}
 			}
